@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+nav{
+    background-color: #003e53;
+    padding: 5px;
+    overflow: hidden;
+}
+.dws-menu ul, .dws-menu ol{
+    list-style: none;
+}
+.dws-menu > ul{
+    float: right;
+    display: flex;
+}
+.dws-menu > ul li{
+    position: relative;
+}
+.dws-menu > ul li a, .dws-menu > ul li button{
+    display: block;
+    padding: 15px 20px 15px 20px;
+    transition: all .1s ease;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+.dws-menu > ul li button{
+    background-color: green;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+}
+.dws-menu li a:hover{
+    box-shadow: inset 0 0 0 3px #a0a0a0;
+    transition: all .1s ease;
+}
+.active{
+    box-shadow: inset 0 0 0 3px #ffffff !important;
+}
+.search{
+    background-color: #003e53;
+    padding: 5px;
+    overflow: hidden;
+}
+select, input, .search button{
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+    max-width: 400px;
+}
+select, input{
+    min-width: 200px;
+}
+#searchByName{
+    width: 350px;
+}
+#searchByBarcode{
+    width: 200px;
+}
+#calendar{
+    margin-top: 5px;
+}
+.main{
+    width: 70%;
+    margin: 0 auto;
+}
+table, th, td{
+    border: none;
+}
+table{
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    border-spacing: 0;
+}
+th, td{
+    padding: 15px 5px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+table>tbody>tr:nth-child(odd){
+    background-color: rgba(242,242,242,1);
+}
+.change{
+    margin-bottom: 0;
+}
+.change button, .delete button{
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    font-size: 20px;
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: background-color .3s;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    letter-spacing: .5px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.change button{
+    line-height: 30px;
+    background-color: #ffffff !important;
+    border: 3px solid #00ade7 !important;
+}
+.change button:hover{
+    background-color: #00ade7 !important;
+}
+.delete button{
+    line-height: 40px;
+    background-color: #ffffff ;
+    border: 3px solid #ff0000 ;
+    color: red;
+}
+.delete button:hover{
+    color: #ffffff;
+    background-color: #ff0000 ;
+}
+.add{
+    position: fixed;
+    right: 23px;
+    bottom: 23px;
+    margin-bottom: 0;
+    z-index: 997;
+}
+.add a{
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    line-height: 58px;
+    font-size: 20px;
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: background-color .3s;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    letter-spacing: .5px;
+    text-decoration: none;
+    background-color: #228B22 !important;
+    border-radius: 50%;
+}
+.changeMain{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color: lightcyan;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+}
+.changeMain h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.changeMain p{
+    padding-bottom: 10px;
+}
+.action{
+    display: flex;
+    justify-content: space-evenly;
+}
+.action button{
+    background-color: green;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+    margin-top: 20px;
+    display: block;
+    padding: 15px 20px 15px 20px;
+    transition: all .1s ease;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+.action a{
+    text-decoration: none;
+}
+.action a button{
+    background-color: red;
+}
+.action button:hover{
+    box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.notFound{
+    font-size: 30px;
+    color: red;
+}
+.notFound th{
+    text-align: center;
+}
+
+@media all and (max-width:1180px){
+    .search{
+        text-align: center;
+    }
+    .search button{
+        margin-top: 5px;
+    }
+}
+@media all and (max-width:770px){
+    .main{
+        width: 95%;
+    }
+    .changeMain{
+        width: 80%;
+        margin-top: 30%;
+    }
+}
